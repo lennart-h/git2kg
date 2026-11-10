@@ -1,0 +1,3 @@
+event_type,issue_number,created_at,actor_name,actor_email,actor_github_id,actor_type,source_issue_number
+cross-referenced,1,2012-01-14T04:45:35Z,alanturing,,1912,User,2
+cross-referenced,2,2012-03-12T07:37:21Z,rosafranklin1920,franklin@kcl.ac.uk,1920,User,1

@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.5
+    hooks:
+      - id: ruff-check
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy
+        # Runs the mypy pinned in the dev group against [tool.mypy] in
+        # pyproject.toml, so the hook, the CLI and the editor agree
+        entry: uv run mypy
+        language: system
+        pass_filenames: false
+        files: ^(src/.*\.py|pyproject\.toml)$

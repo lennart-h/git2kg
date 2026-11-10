@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+title: Git2KG: Mining socio-technical relationships in GitHub repositories as temporal knowledge graphs
+type: software
+authors:
+  - family-names: Hessenauer
+    given-names: Lennart
+    email: lennart.hessenauer@uni-wuerzburg.de
+    affiliation: University of Würzburg
+  - family-names: Qarkaxhija
+    given-names: Lisi
+    email: lisi.qarkaxhija@uni-wuerzburg.de
+    affiliation: University of Würzburg
+  - family-names: Scholtes
+    given-names: Ingo
+    email: ingo.scholtes@uni-wuerzburg.de
+    affiliation: University of Würzburg
+    
+version: 1.0.0
+license: AGPL-3.0-or-later
+keywords:
+  - knowledge graph
+  - data mining
+  - software repository
+  - network science

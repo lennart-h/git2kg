@@ -1,0 +1,47 @@
+{
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"name": "git2kg-python3.13",
+	"remoteUser": "root",
+	"mounts": [
+	"source=${localEnv:HOME}/.ssh/config,target=/tmp/ssh_config_host,type=bind,consistency=cached"
+	],
+	"postStartCommand": "cp /tmp/ssh_config_host /root/.ssh/config && chmod 600 /root/.ssh/config",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"charliermarsh.ruff",
+				"ms-python.mypy-type-checker",
+				"mechatroner.rainbow-csv"
+			],
+			"settings": {
+				"[python]": {
+					"analysis.languageServerMode": "light",
+					"editor.defaultFormatter": "charliermarsh.ruff",
+					"notebook.defaultFormatter": "charliermarsh.ruff",
+					"mypy-type-checker.importStrategy": "fromEnvironment"
+				}
+			}
+		},
+		// Add IDs of extensions you want to be installed when container is created.
+		"extensions": [
+			"ms-python.python",
+			"ms-toolsai.jupyter",
+			"charliermarsh.ruff",
+			"ms-python.mypy-type-checker"
+		]
+	},
+	"runArgs": [
+		"-it"
+	],
+	// Install git2kg as editable python package
+	// Use optional dependencies 'vis' for visualization (manim) and 'cu129' for CUDA 12.9 support
+	// (change 'cu129' to 'cpu' if you want to use the CPU version of PyTorch and PyTorch Geometric)
+	"postCreateCommand": "uv sync --frozen --all-extras && git config --global --add safe.directory /workspaces/git2kg",
+	"remoteEnv": {
+		"PATH": "/workspaces/git2kg/.venv/bin:${containerEnv:PATH}"
+	}
+}

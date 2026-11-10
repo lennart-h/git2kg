@@ -1,0 +1,5 @@
+issue_number,id,author_name,author_email,author_github_id,author_type,created_at,updated_at,body,sentiment_polarity,sentiment_subjectivity,n_reactions,upvotes,downvotes,laugh,hooray,confused,heart,rocket,eyes,mentioned_actors_name,mentioned_actors_email,mentioned_actors_github_id,mentioned_actors_id
+1,46,alanturing,,1912,User,2008-01-14T05:33:35Z,2008-01-14T05:33:35Z,@mariecurie I completely disagree,-0.2,0.4,0,0,0,0,0,0,0,0,0,"['mariecurie']","[None]","[None]","[None]"
+1,45,alanturing,,1912,User,2008-01-14T04:45:35Z,2008-01-14T04:45:35Z,No,0,0,2,0,0,0,1,0,0,0,1,"[]","[]","[]","[]"
+2,47,Konny Zuse,zuse@zusekg.de,1910,User,2009-03-15T08:59:36Z,2009-03-15T08:59:36Z,"@rosafranklin1920 I willll handle it",0.2,0.01,1,1,0,0,0,0,0,0,0,"['rosafranklin1920']","[None]","[None]","[None]"
+2,48,rosafranklin1920,franklin@kcl.ac.uk,1920,User,2009-04-15T10:30:36Z,2009-04-15T10:30:36Z,"@alanturing I think this is done now",0.1,0.3,1,0,0,0,0,0,1,0,0,"['alanturing']","[None]","[None]","[None]"

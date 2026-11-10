@@ -1,0 +1,9 @@
+{
+  "cpu_count": 24,
+  "cpu_model": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "platform": "Linux-7.2.10-200.fc44.x86_64-x86_64-with-glibc2.41",
+  "python": "3.13.12",
+  "git2kg": "1.0.0",
+  "repository": "tukaani-project/xz",
+  "measured_on": "2026-11-10T08:25:21.023063"
+}
